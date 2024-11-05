@@ -10,6 +10,7 @@ ENV PYTHONUNBUFFERED=1
 # Install system dependencies and JupyterLab
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
+    gfortran \
     && rm -rf /var/lib/apt/lists/*
 
 # Upgrade pip and install required Python packages
