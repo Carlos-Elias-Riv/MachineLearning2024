@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Upgrade pip and install required Python packages
 RUN pip install --upgrade pip \
-    && pip install numpy==1.21.6 matplotlib pandas scikit-image scikit-learn jupyterlab seaborn
+    && pip install numpy==1.21.6 scipy==1.7.3 matplotlib==3.5.2 pandas scikit-image scikit-learn jupyterlab seaborn
 
 # Set the working directory inside the container
 WORKDIR /workspace
